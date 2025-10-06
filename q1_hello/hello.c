@@ -12,7 +12,9 @@
 
 int main(void) {
     // TODO: Add your printf statements here
-
+    printf("Hello, Post-Silicon Validation World!\n");
+    printf("This course covers hardware validation techniques after silicon fabrication.\n");   
     return 0;
-}
+} 
+
 
