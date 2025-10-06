@@ -39,9 +39,9 @@ int main(void) {
     scanf("%f", &measured_voltage); 
    
    if (is_valid_voltage(measured_voltage)) {
-   	printf("PASS");
+   	printf("PASS\n");
    } else {
-   	printf("FAIL");
+   	printf("FAIL\n");
    }
     		
 
