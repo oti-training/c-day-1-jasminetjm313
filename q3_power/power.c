@@ -19,7 +19,8 @@
  */
 float calculate_power(float voltage, float current) {
     // TODO: Implement power calculation
-    return 0.0f;  // Placeholder
+    float power = voltage * current;
+    return power;  // Placeholder
 }
 
 /**
@@ -28,8 +29,11 @@ float calculate_power(float voltage, float current) {
  * @return 1 if valid (<=5.0W), 0 if invalid
  */
 int is_valid_power(float power) {
-    // TODO: Implement power validation logic
-    return 0;  // Placeholder
+	if (power <= 5.0f) {
+		return 1;
+	} else {
+    		return 0; 
+    	} // Placeholder
 }
 
 #ifndef UNIT_TEST
@@ -42,6 +46,19 @@ int main(void) {
 
     // TODO: Read voltage and current, calculate power, and validate
     // Read voltage and current, calculate power, and validate
+    printf("Enter current");
+    scanf("%f",&current);
+    
+    printf("Enter voltage");
+    scanf("%f", &voltage);
+    
+    power = calculate_power(voltage,current);
+    
+    if (is_valid_power(power)) {
+    	printf("PASS\n");
+    } else {
+    	printf("FAIL\n");
+    }
 
     return 0;
 }
