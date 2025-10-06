@@ -19,7 +19,7 @@
 int is_valid_voltage(float voltage) {
     // TODO: Implement voltage validation logic
     if (voltage >= 1.8f && voltage <= 3.3f){
-    return -1;  // Placeholder to fail all tests
+    return 1;  // Placeholder to fail all tests
     } else {
     return 0;
     }
